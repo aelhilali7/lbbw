@@ -1,0 +1,15 @@
+# Beispielwerte für das Workload-Team. Kopieren nach terraform.tfvars und anpassen.
+# Alle Hub-Werte (IDs, IPs) liefert das Plattformteam der Landing Zone.
+
+location    = "germanywestcentral"
+environment = "prod"
+
+hub_vnet_id             = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-connectivity-gwc/providers/Microsoft.Network/virtualNetworks/vnet-hub-gwc"
+hub_resource_group_name = "rg-connectivity-gwc"
+hub_vnet_name           = "vnet-hub-gwc"
+firewall_private_ip     = "10.10.2.4"
+hub_dns_inbound_ip      = "10.10.0.4"
+
+onprem_address_prefixes = ["10.100.0.0/16"]
+
+log_analytics_workspace_id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-management/providers/Microsoft.OperationalInsights/workspaces/law-central"
